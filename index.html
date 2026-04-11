@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maid Café ✨</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ai-assistant" id="aiAssistant">
+        <div class="ai-character">
+            <img src="assets/menu/maid.png" id="maidSprite" alt="Maid Assistant">
+            <button class="chat-toggle-btn" id="chatToggleBtn">
+                <span>Hello! May I help you? ♪</span>
+                <span class="tap-text">✧ Tap to chat ✧</span>
+            </button>
+        </div>
+        <div class="ai-chat" id="aiChat">
+            <div class="chat-messages" id="chatMessages">
+                <p class="maid-message">Welcome to Sweet Dreams Maid Café, Master! How may I assist you today? ♪</p>
+                <p class="maid-message">I can help you with:</p>
+                <p class="maid-message">
+                    • Viewing our menu 🍰<br>
+                    • Making a reservation 📅<br>
+                    • Information about events ✨<br>
+                    • Special requests 💝
+                </p>
+            </div>
+            <input type="text" 
+                   id="userInput" 
+                   placeholder="Ask about menu, make a reservation, or any other questions..."
+                   aria-label="Chat with maid assistant">
+        </div>
+    </div>
+
+    <header>
+        <h1>Maid Café "Sweet Dreams"</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu" class="menu-section">
+            <h2>✧ Our Special Menu ✧</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="assets/menu/omurice.jpg" alt="Omurice">
+                    <h3>Omurice</h3>
+                    <!-- ... -->
+                </div>
+                <!-- More menu items -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
