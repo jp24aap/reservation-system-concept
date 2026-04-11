@@ -659,10 +659,23 @@ nav a:hover {
         max-height: 200px;
     }
     
+    /* Make the mobile toggle button a neat, horizontal speech bubble on the left */
     .chat-toggle-btn {
-        bottom: -45px;
+        bottom: 30px;
+        left: -10px;
+        transform: translateX(-100%);
         padding: 8px 15px;
         font-size: 0.9em !important;
+        white-space: nowrap;
+        border-radius: 20px 20px 0 20px;
+    }
+    
+    .chat-toggle-btn span:first-child {
+        display: none; /* Hide the long text to save space */
+    }
+    
+    .ai-chat.active + .ai-character .chat-toggle-btn {
+        display: none !important;
     }
 
     /* Structural Adjustments */
