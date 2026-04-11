@@ -579,3 +579,147 @@ nav a:hover {
         transform: translate(-50%, -50%);
     }
 }
+
+
+/* =========================================================================
+   Responsive Design Media Queries 
+   ========================================================================= */
+
+/* Tablets and small desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+    
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 15px;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Header & Navigation */
+    header {
+        padding: 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    nav a {
+        font-size: 0.95em;
+        padding: 6px 12px;
+    }
+
+    /* Back Button Behavior */
+    .back-button {
+        position: static;
+        display: inline-flex;
+        margin: 15px auto;
+        justify-content: center;
+        width: max-content;
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+
+    /* AI Assistant */
+    .ai-assistant {
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .ai-character {
+        margin-bottom: 45px; /* Adjust spacing for smaller toggle button */
+    }
+    
+    .ai-character img {
+        width: 130px;
+    }
+    
+    .ai-chat {
+        max-width: 85vw;
+        min-width: 250px;
+        margin-right: 10px;
+        padding: 15px;
+    }
+    
+    .chat-messages {
+        max-height: 200px;
+    }
+    
+    .chat-toggle-btn {
+        bottom: -45px;
+        padding: 8px 15px;
+        font-size: 0.85em;
+    }
+
+    /* Structural Adjustments */
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-item {
+        margin: 10px;
+    }
+
+    /* Reservation Forms */
+    .reservation-container,
+    .login-container,
+    .modal-content {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+        font-size: 16px; /* Prevents auto-zoom on iOS */
+        padding: 10px;
+    }
+    
+    /* Modals & Overlays */
+    .confirmation-overlay {
+        width: 85vw;
+        padding: 15px;
+    }
+}
+
+/* Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        gap: 8px;
+    }
+    
+    nav a {
+        font-size: 0.85em;
+        padding: 5px 10px;
+    }
+    
+    .menu-item img {
+        height: 180px;
+    }
+    
+    .ai-character img {
+        width: 100px;
+    }
+    
+    .chat-toggle-btn span {
+        font-size: 0.9em;
+    }
+}
