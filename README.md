@@ -2,6 +2,10 @@
 
 A dynamic, client-side web application featuring a simulated reservation database, interactive UI, and a secure administrative dashboard.
 
+## 🚀 Live Demo
+
+
+
 ## 🚀 Key Features
 * **Simulated Database System:** Engineered a custom state-management system using the Web Storage API (`localStorage`) to handle real-time customer reservations and order processing.
 * **Secure Admin Dashboard:** Built a hidden administrative panel accessed via targeted keyboard event listeners, utilizing client-side authentication (`sessionStorage`) to restrict access.
